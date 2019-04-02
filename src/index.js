@@ -1,3 +1,3 @@
 import MIDIKnob from './components/MIDIKnob';
-
-export { MIDIKnob };
+import MIDIConnectionManager from './components/MIDIConnectionManager';
+export { MIDIKnob, MIDIConnectionManager };
