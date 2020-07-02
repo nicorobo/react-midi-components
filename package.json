@@ -1,48 +1,58 @@
 {
-	"name": "@react-midi/components",
-	"version": "0.0.2",
-	"description": "React components for working with midi",
-	"main": "build/index.js",
-	"scripts": {
-		"start": "webpack --watch --mode=development",
-		"build": "webpack --mode=production",
-		"prepublish": "npm run build"
-	},
-	"peerDependencies": {
-		"react": "^16.8.0",
-		"react-dom": "^16.8.0",
-		"@react-midi/hooks": "^0.0.5"
-	},
-	"keywords": [
-		"react-midi",
-		"react",
-		"midi",
-		"midi-components"
-	],
-	"author": "Nick Roberts",
-	"license": "ISC",
-	"dependencies": {
-		"styled-components": "^4.2.0"
-	},
-	"devDependencies": {
-		"@babel/cli": "^7.2.3",
-		"@babel/core": "^7.4.0",
-		"@babel/plugin-proposal-object-rest-spread": "^7.4.0",
-		"@babel/plugin-transform-react-jsx": "^7.3.0",
-		"@babel/preset-env": "^7.4.2",
-		"@react-midi/hooks": "0.0.5",
-		"babel-loader": "^8.0.5",
-		"react": "^16.8.6",
-		"react-dom": "^16.8.6",
-		"webpack": "^4.29.6",
-		"webpack-cli": "^3.3.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/nickroberts404/react-midi-hooks.git"
-	},
-	"bugs": {
-		"url": "https://github.com/nickroberts404/react-midi-hooks/issues"
-	},
-	"homepage": "https://github.com/nickroberts404/react-midi-hooks#readme"
+  "name": "@react-midi/components",
+  "version": "0.0.2",
+  "description": "React components for working with midi",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "webpack --watch --mode=development",
+    "build": "webpack --config webpack.config.prod.js --mode=production",
+    "prepublish": "npm run build"
+  },
+  "peerDependencies": {
+    "@react-midi/hooks": "^1.0.2",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "keywords": [
+    "react-midi",
+    "react",
+    "midi",
+    "midi-components"
+  ],
+  "author": "Nick Roberts",
+  "license": "ISC",
+  "dependencies": {
+    "styled-components": "^4.2.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "always"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.4.2",
+    "@react-midi/hooks": "^1.0.2",
+    "@types/node": "^12.12.14",
+    "@types/react": "^16.9.15",
+    "@types/styled-components": "^5.1.0",
+    "babel-loader": "^8.0.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickroberts404/react-midi-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nickroberts404/react-midi-hooks/issues"
+  },
+  "homepage": "https://github.com/nickroberts404/react-midi-hooks#readme"
 }

@@ -1,27 +1,26 @@
 var path = require('path');
 module.exports = {
-	entry: './src/index.js',
-	output: {
-		path: path.resolve(__dirname, 'build'),
-		filename: 'index.js',
-		libraryTarget: 'commonjs2',
-	},
-	module: {
-		rules: [
-			{
-				test: /\.js$/,
-				include: path.resolve(__dirname, 'src'),
-				exclude: /(node_modules|build)/,
-				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: ['@babel/preset-env'],
-					},
-				},
-			},
-		],
-	},
-	externals: {
-		react: 'commonjs react',
-	},
+  entry: './src/index.ts',
+  devtool: 'inline-source-map',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+    libraryTarget: 'commonjs2',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        include: path.resolve(__dirname, 'src'),
+        exclude: /(node_modules|dist)/,
+        loader: 'ts-loader',
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+  externals: {
+    react: 'commonjs react',
+  },
 };
