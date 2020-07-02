@@ -2,7 +2,7 @@
   "name": "@react-midi/components",
   "version": "0.0.4",
   "description": "React components for working with midi",
-  "main": "build/index.js",
+  "main": "./dist/bundle.js",
   "scripts": {
     "start": "webpack --watch --mode=development",
     "build": "webpack --config webpack.config.prod.js --mode=production",
